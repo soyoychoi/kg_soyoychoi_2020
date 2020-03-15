@@ -1,3 +1,5 @@
+// isOneToOne function returns false if s1 has repeating characters
+// (checks using a hashmap) or if s1 is longer than s2
 const isOneToOne = (s1, s2) => {
   let map = new Map();
   if (s1.length > s2.length) {
@@ -14,6 +16,7 @@ const isOneToOne = (s1, s2) => {
   return "true";
 };
 
+// read inputs from stdin and print output into stdout
 if (process.argv.length <= 3) {
   console.log("false");
 } else {
