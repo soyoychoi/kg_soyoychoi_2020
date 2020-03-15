@@ -13,3 +13,11 @@ const isOneToOne = (s1, s2) => {
   }
   return "true";
 };
+
+if (process.argv.length <= 3) {
+  console.log("false");
+} else {
+  const s1 = process.argv[2];
+  const s2 = process.argv[3];
+  console.log(isOneToOne(s1, s2));
+}
